@@ -1,0 +1,22 @@
+# Virtual environment
+djnago/venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases
+djnago/db.sqlite3
+*.sqlite3
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

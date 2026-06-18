@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <h1>Welcome to {{ title }}</h1>
+
+    <h3>Inventory Status:</h3>
+    {% if is_available %}
+    <p style="color: green;">Items are currently ready for immediate dispatch.</p>
+    {% else %}
+    <p style="color: red;">Warehouse currently empty.</p>
+    {% endif %}
+
+    <h3>Available Components:</h3>
+    <ul>
+        {% for product in products %}
+        <li>{{ product }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
